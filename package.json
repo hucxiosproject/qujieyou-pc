@@ -1,0 +1,56 @@
+{
+  "name": "qujieyou-pc",
+  "version": "0.1.0",
+  "description": "解忧杂货铺PC网站",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "rm -rf ./dist/* && gulp",
+    "build:prod": "rm -rf ./dist/* && gulp deploy --type production",
+    "start:prod": "NODE_ENV=production node --harmony ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.captain.bengjiujie.com:1022/web/qujieyou-pc.git"
+  },
+  "keywords": [
+    "解忧杂货铺",
+    "官网"
+  ],
+  "author": "bowen",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^6.3.15",
+    "backbone": "^1.2.3",
+    "del": "^2.2.0",
+    "event-stream": "^3.3.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-header": "^1.7.1",
+    "gulp-htmlincluder": "^0.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-ignore": "^2.0.1",
+    "gulp-inject": "^3.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-mini-confusion": "^0.1.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-modernizr": "0.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.1",
+    "gulp-size": "^2.0.0",
+    "gulp-stylus": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "koa": "^1.1.2",
+    "koa-bodyparser": "^2.0.1",
+    "koa-static": "^2.0.0",
+    "path": "^0.12.7",
+    "stream-series": "^0.1.1"
+  }
+}

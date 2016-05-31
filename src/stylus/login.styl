@@ -1,0 +1,57 @@
+#login-confirm-page
+  display: none
+
+.login-container
+  padding-top: 80px
+
+  .login-inner-container
+    overflow: hidden
+
+  .QnR-outer-wrap
+    float: right
+    margin-top: 140px
+
+    .QnR-inner-wrap
+      position: relative
+      margin: 20px
+
+      .rect
+        width:30px
+        height:30px
+        position: absolute
+        background-color: transparent
+
+      for v in top bottom
+        for h in left right
+          .rect-{v}-{h}
+            {v}: -18px
+            {h}: -18px
+            border-{v}: solid 3px #583330
+            border-{h}: solid 3px #583330
+
+
+  .note
+    margin-top: 80px
+    line-height: 30px
+    background-color: #583330
+    color: #fff
+
+  .big-img
+    float: left
+    width: 600px
+
+    .app-title
+      font-size: 22px
+      color: #583330
+      text-align: left
+      line-height: 40px
+
+    .img-wrap
+      margin-top: 20px
+
+  #QnR-image
+    width 200px
+    height 200px
+
+#login-suc-note
+  display: none

@@ -1,0 +1,17 @@
+vendors = webkit moz o ms official
+
+border-radius()
+  for vendor in vendors
+    if vendor == official
+      border-radius: arguments
+    else
+      -{vendor}-border-radius: arguments
+
+-pos(type, args)
+  i=0
+  position: unquote(type)
+  {args[i]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+  {args[i += 1]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+
+absolute()
+  -pos('absolute', arguments)
